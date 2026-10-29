@@ -1,0 +1,16 @@
+application:
+  subdomain: doocs-md
+  multi_instance: false
+  upstreams:
+    - location: /
+      backend: http://md:80/
+services:
+  md:
+    # upstream: docker.io/doocs/md:2.1.0
+    image: docker.1ms.run/doocs/md:2.1.0
+usage: |
+  md 是微信公众号 Markdown 排版编辑器，支持主题、代码高亮与图表。
+  编辑后将排版结果复制到公众号后台；重要内容请及时导出或另行备份。
+  上游镜像提供嵌入式静态网页，本包不配置数据库、账号或服务器端文稿目录。
+  入口保留懒猫登录保护，不附加文件选择器拦截。
+  按用户要求不运行 smoke；构建和包校验不代表已完成懒猫实机或编辑交互测试。

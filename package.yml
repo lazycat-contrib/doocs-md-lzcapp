@@ -1,0 +1,15 @@
+package: community.lazycat.app.doocs-md
+version: 2.1.0
+name: md
+description: A Markdown editor for formatting WeChat articles with themes, code blocks and diagrams.
+min_os_version: "1.5.0"
+homepage: https://github.com/doocs/md
+author: doocs
+license: WTFPL
+locales:
+  zh:
+    name: md
+    description: 微信公众号 Markdown 编辑器，支持主题排版、代码高亮和图表，编辑完成后复制到公众号后台。
+  en:
+    name: md
+    description: A Markdown editor for formatting WeChat articles with themes, code blocks and diagrams.
